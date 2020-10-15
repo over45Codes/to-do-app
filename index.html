@@ -10,15 +10,17 @@
   <div class="top">
    <h1>To-Do List</h1>
    <form action="index.html" method="post">
-    <input type="text" id=“addtask" name=“newtask">
-    <button  type="submit"><strong>Submit</strong></button>
+    <input type="text" id="addtask" placeholder="New task item">
+    <button type="submit"><strong>Submit</strong></button>
    </form>
-  <div class=“inputBoxes”>
-   <ul>
-   </ul>
-  <a id="clear">Clear</a>
   </div>
-</div>
+  <div class="input-container">
+   <ul id="list">
+   </ul>
+  </div>
+  <div class="clear-all-container">
+    <button class="clear-all-button">Clear All</button>
+  </div>
 <script type="text/javascript" src="app.js"></script>
  </body>
 </html>
