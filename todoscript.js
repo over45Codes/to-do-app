@@ -1,6 +1,19 @@
-// Get object  
+// get Selectors  
+const taskInput = document.querySelector('.task-input');
+const todoButton = document.querySelector('.addButton');
+const todoList = document.querySelector('.todo-list');
 
 
 
-// Now we will create a function that will allow us to add element on button click 
+// Event Listeners
+todoButton.addEventListener('click', addButton);
+
+
+
+// Functions
+function addButton(event) {
+    //prevent form from submitting
+    event.preventDeafault();
+}
+
 
