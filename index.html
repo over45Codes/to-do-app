@@ -7,22 +7,22 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
  <body>
-  <div class="top">
+  <div id="task" class="task">
    <h1>To-Do List</h1>
     <form action="index.html" method="post">
-    <input type="text"  class="task-input" placeholder="New task item">
-    <button class="addButton" type="submit">
-     <i class="fas fa-plus-square"><strong>Submit</strong></i>
+    <input type="text"  id="task-input" placeholder="New task item">
+    <button id="addButton" type="submit">
+     <i class="fa fa-fw fa-plus"><strong>Submit</strong></i>
     </button>
    </form>
   </div>
-  <div class="input-container">
-   <ul class="todo-list">
+  <div id="input-task" class="input-task">
+   <ul id="todo-list">
      <li>Create</li>
    </ul>
   </div>
-  <div class="clear-all-container">
-    <button class="clear-all-button">Clear All</button>
+  <div id="clear-task" class="clear-all-task">
+    <button id="clear-all-button">Clear All</button>
   </div>
 <script type="text/javascript" src="todoscript.js"></script>
  </body>

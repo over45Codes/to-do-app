@@ -1,7 +1,5 @@
 // get Selectors  
-const taskInput = document.querySelector('.task-input');
-const todoButton = document.querySelector('.addButton');
-const todoList = document.querySelector('.todo-list');
+let 
 
 
 // Event Listeners
