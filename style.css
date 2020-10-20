@@ -1,9 +1,10 @@
 
 
-body {
-    font-family: sans-serif;
-    font-size: 25px;
-    color: red;
+html, body {
+    font-family: Helvetica;
+    font-size: 20px;
+    color:black;
     width: 400px;
-    margin: 0 auto;   
+    margin: 0 auto;
+    background-color: bisque;   
 }

@@ -2,28 +2,27 @@
 <html>
  <head>
   <meta charset="utf-8">
-   <title>To-Do List</title>
-   <link rel="stylesheet" href="style.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
- <body>
-  <div id="task" class="task">
-   <h1>To-Do List</h1>
-    <form action="index.html" method="post">
-    <input type="text"  id="task-input" placeholder="New task item">
-    <button id="addButton" type="submit">
-     <i class="fa fa-fw fa-plus"><strong>Submit</strong></i>
-    </button>
-   </form>
-  </div>
-  <div id="input-task" class="input-task">
-   <ul id="todo-list">
-     <li>Create</li>
-   </ul>
-  </div>
-  <div id="clear-task" class="clear-all-task">
-    <button id="clear-all-button">Clear All</button>
-  </div>
-<script type="text/javascript" src="todoscript.js"></script>
- </body>
+  <body>
+    <header> 
+      <h1>To-Do List</h1> 
+    </header>
+    <form>
+      <input  type="text" id="input" class="todo-input" placeholder="add task">
+      <button id="addButton" class="todo-button" type="submit">
+       <i class="fa fa-fw fa-plus"><strong>Submit</strong></i>
+      </button>
+    </form>
+   </div>
+     <div class="todo-list-container">
+      <ul id="listItems">
+        <li>item-group-list</li>
+      </ul>
+     </div>
+      <button id="clearAll">Clear All</button>
+     </div>
+    <script type="text/javascript" src="todoscript.js"></script>
+  </body>
 </html>
