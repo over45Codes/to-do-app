@@ -8,7 +8,6 @@ const input = document.getElementById('input');
 //retrieve  and store the value from the input box
 //let inputBoxValue = e.target.value;
 //console.log(inputBoxValue);
-
 //});
 
 // add a const 
@@ -19,19 +18,27 @@ submitBtn.addEventListener('click', addTodo);
 function addTodo (event) {
     event.preventDefault();   
     console.log('clicked');
-    const listItem = input.value;
-    console.log(listItem);
-    
 
+    
 //get element by id for ul list
+//let listItem = document.getElementById('list-items').input.value;
 //create a new li element // document.createElement('li);
 //display that list item to the page
 // add class to li 
-// li.className ????
-// add text node with input value appendChild
+// ******* add text node with input value appendChild / PROBLEM ****** 
 // appendChild to ul parent 
+    let listItem = document.getElementById('list-items').value;
+    console.log(listItem);
+
+    let ul = document.querySelector('ul');
+    let li = document.createElement('li');
+    li.appendChild(document.createTextNode(listItem));
+    ul.appendChild(li);
+    
 
 }
+    
+
 //3. I need the input data to be cleared when I click on the button ClearAll 
 const ClearAll = document.getElementById('clear-all');
 ClearAll.addEventListener('click', clearTodo); 
@@ -39,6 +46,7 @@ ClearAll.addEventListener('click', clearTodo);
 function clearTodo (event) {
     console.log('clear all clicked');
     input.value ="";
+
 }
 
 
