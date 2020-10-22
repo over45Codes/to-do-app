@@ -10,7 +10,7 @@ const input = document.getElementById('input');
 //console.log(inputBoxValue);
 //});
 
-// add a const 
+
 //2. get element by id for button that will add items to list , we can break it up to make it easier 
 const submitBtn = document.getElementById('add-button');
 submitBtn.addEventListener('click', addTodo);
@@ -18,36 +18,32 @@ submitBtn.addEventListener('click', addTodo);
 function addTodo (event) {
     event.preventDefault();   
     console.log('clicked');
-
-    
-//get element by id for ul list
+    renderTodo();
+}
+//3. get element by id for ul list
 //let listItem = document.getElementById('list-items').input.value;
 //create a new li element // document.createElement('li);
 //display that list item to the page
 // add class to li 
 // ******* add text node with input value appendChild / PROBLEM ****** 
 // appendChild to ul parent 
-    let listItem = document.getElementById('list-items');
-    console.log(listItem);
+function renderTodo() {
+let listItem = document.getElementById('list-items');
+console.log(listItem);
 
-    let ul = document.querySelector('ul');
-    let li = document.createElement('li');
-    li.appendChild(document.createTextNode(listItem));
-    ul.appendChild(li);
-    li.textContent = input.value;
-    
-
+let ul = document.querySelector('ul');
+let li = document.createElement('li');
+li.appendChild(document.createTextNode(listItem));
+ul.appendChild(li);
+li.textContent = input.value;
 }
-    
-
-//3. I need the input data to be cleared when I click on the button ClearAll 
+//4. I need the input data to be cleared when I click on the button ClearAll 
 const ClearAll = document.getElementById('clear-all');
 ClearAll.addEventListener('click', clearTodo); 
 
 function clearTodo (event) {
     console.log('clear all clicked');
     input.value ="";
-
 }
 
 
