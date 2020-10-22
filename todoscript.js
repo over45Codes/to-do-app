@@ -27,13 +27,14 @@ function addTodo (event) {
 // add class to li 
 // ******* add text node with input value appendChild / PROBLEM ****** 
 // appendChild to ul parent 
-    let listItem = document.getElementById('list-items').value;
+    let listItem = document.getElementById('list-items');
     console.log(listItem);
 
     let ul = document.querySelector('ul');
     let li = document.createElement('li');
     li.appendChild(document.createTextNode(listItem));
     ul.appendChild(li);
+    li.textContent = input.value;
     
 
 }
