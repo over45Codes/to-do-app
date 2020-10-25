@@ -28,16 +28,14 @@ function renderTodo() {
     (input.value);
     input.value = '';
 
-
-
     let deleteBtn = document.createElement('button');
     deleteBtn.className = 'btn btn-danger btn-sm float-right delete';
     deleteBtn.appendChild(document.createTextNode('X'));
     li.appendChild(deleteBtn);
     listItem.appendChild(li);
-}
 
-//4. function that will clear the text box when you click the  submit button 
+}
+//4. function to delete a task when I click on the delete (X) button  
 const clearSubmit = document.getElementById('list-items');
 clearSubmit.addEventListener('click', clearList);
 
