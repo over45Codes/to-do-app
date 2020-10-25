@@ -10,7 +10,6 @@ function addTodo(event) {
     event.preventDefault();
     console.log('clicked');
     renderTodo();
-
 }
 // addtodo items to array and push to local storage //render to array//to refresh the browser or refresh the page and still be able to have my todo items render
 //const itemArray[
@@ -25,6 +24,10 @@ function renderTodo() {
     let li = document.createElement('li');
     ul.appendChild(li);
     li.textContent = input.value;
+    if (input.value != '');
+    (input.value);
+    input.value = '';
+
 
 
     let deleteBtn = document.createElement('button');
