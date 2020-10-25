@@ -35,20 +35,34 @@ function renderTodo() {
     listItem.appendChild(li);
 
 }
-//4. function to delete a task when I click on the delete (X) button  
-const clearSubmit = document.getElementById('list-items');
-clearSubmit.addEventListener('click', clearList);
+//4. function to clear  
 
-function clearList(event) {
-    console.log(1);
-    input.value = "";
+document.querySelector('ul').addEventListener('click', deleteItem);
+
+function deleteItem(e) {
+    console.log(e.target.parentElement);
+    let remove = e.target.parentElement;
+    let parentElement = remove.parentElement;
+    parentElement.removeChild(remove);
+
+    // this will give us the button itself{
+    //here we want to find out what how we can get the li from this
+    // since in your renderTodo() you created the button as a 'child' of the li
+    // (HINT) what is the relationship of the li to the button?
+    // console.log(event.target.?) to get the li?
 }
-//5. I need the input data to be cleared when I click on the button ClearAll 
-const ClearAll = document.getElementById('clear-all');
-ClearAll.addEventListener('click', clearTodo);
 
-function clearTodo(event) {
+//}
+//5. I need the input data to be cleared when I click on the button ClearAll ' this needs to clear all items when clicked 
+
+const ClearAll = document.getElementById('clear-all');
+ClearAll.addEventListener('click', clearAll);
+
+function clearAll(e) {
     console.log('clear all clicked');
+    let remove = e.target.appendChild;
+    let appendChild = remove.appendChild;
+    appendChild.removeChild(remove);
     input.value = "";
 }
 
