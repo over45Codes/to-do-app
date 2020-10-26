@@ -40,7 +40,6 @@ ClearAll.addEventListener('click', clearAll);
 function clearAll(e) {
     console.log('clear all clicked');
     const listItems = document.querySelectorAll('li');
-    // Loop through all items & remove
     listItems.forEach((li) => {
         li.remove();
     });

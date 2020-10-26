@@ -6,6 +6,22 @@ html, body {
     color:black;
     width: 400px;
     margin: 0 auto;
-    background-color: bisque;   
+    background-color: lightskyblue;   
 }
+
+input{
+display: grid;
+width: 400px;
+font-size: 1.5em;
+background-color: black;
+color: white;
+}    
+
+
+
+
+
+
+
+
 
