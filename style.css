@@ -9,13 +9,22 @@ html, body {
     background-color: lightskyblue;   
 }
 
-input{
-display: grid;
-width: 400px;
-font-size: 1.5em;
-background-color: black;
-color: white;
-}    
+input {
+    display: grid;
+    border: ridge;
+    padding: 8px;
+    width: 400px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+} 
+
+.delete {
+    cursor: pointer;
+    background-color: lightcoral;
+    border: ridge;
+    margin:8px;
+}
 
 
 
