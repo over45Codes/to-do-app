@@ -1,36 +1,20 @@
+html {
+  background-image: url("images/blue-mist.jpg");
+  background-size: cover;
+}
 
-
-html, body {
-    font-family: Helvetica;
-    font-size: 20px;
-    color:black;
-    width: 400px;
-    margin: 0 auto;
-    background-color: lightskyblue;   
+body {
+  font-family: Helvetica;
+  font-size: 20px;
+  color: black;
+  width: 400px;
+  margin: 0 auto;
 }
 
 input {
-    display: grid;
-    border: ridge;
-    padding: 8px;
-    width: 400px;
-    font-size: 1em;
-    background-color: black;
-    color: white;
-} 
-
-.delete {
-    cursor: pointer;
-    background-color: lightcoral;
-    border: ridge;
-    margin:8px;
+  display: grid;
+  width: 400px;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
 }
-
-
-
-
-
-
-
-
-
