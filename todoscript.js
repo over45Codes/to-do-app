@@ -20,7 +20,7 @@ function renderTodo() {
   input.value = "";
 
   let deleteBtn = document.createElement("button");
-  deleteBtn.className = "btn btn-danger btn-sm float-right delete";
+  deleteBtn.className = "btn btn-danger btn-sm delete";
   deleteBtn.appendChild(document.createTextNode("X"));
   li.appendChild(deleteBtn);
   listItem.appendChild(li);
