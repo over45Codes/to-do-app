@@ -57,7 +57,7 @@ function clearAll(e) {
 }
 //to create something, you need to create a function - to push to local storage
 function saveToLocalStorage() {
-  localStorage.setItem("savedTodos", JSON.stringify(savedTodos));
+  localStorage.setItem("todos", JSON.stringify(savedTodos));
 }
 
 function pushToLocalStorage() {
