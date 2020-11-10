@@ -89,6 +89,11 @@ function pushToLocalStorage(newTodos) {
   localStorage.setItem("todos", JSON.stringify(newTodos));
 }
 
+function pushToLocalStorage(newTodoIds) {
+  console.log("new TodoIds", newTodoIds);
+  localStorage.setItem("new todoIds", JSON.stringify(newTodoIds));
+}
+
 function renderOnLoad() {
   todos.forEach((todo, todoIds) => {
     let listItem = document.getElementById("listItems");
@@ -97,7 +102,7 @@ function renderOnLoad() {
     ul.appendChild(li);
     listItem.appendChild(li);
 
-    li.textContent = (todo, todoIds);
+    li.textContent = todo.todoIds;
 
     let deleteBtn = document.createElement("button");
     deleteBtn.className = "btn btn-danger btn-sm float-right";
@@ -111,16 +116,16 @@ function renderOnLoad() {
       li.remove();
       //7a. delete from DOM. An item can delete itself.
       //8a. delete from local storage
-      let idToRemoveTodosIds = todoIds.id;
-      console.log("todoIds id:", idToRemoveTodosIds);
+      let idToRemoveNewTodosIds = todoIds.id;
+      console.log("todoIds id:", idToRemoveNewTodosIds);
       //it allows you to go through every single item in an array and if the todo is true it will shoot back into new array
-      let newTodoIds = todoIds.filter(
-        (todoIds) => todoIds.id != idToRemoveTodosIds
-      );
-      console.log("new todoIds: ", newTodoIds);
+      //let newTodoIds = todoIds.filter(
+      //(todoIds) => todoIds.id != idToRemoveTodosIds
+      //);
+      //console.log("new todoIds: ", newTodoIds);
     });
     // 9a. need to make sure to push the new todos to local storage
-    pushToLocalStorage(newTodoIds);
+    pushToLocalStorage(newtodoIds);
   });
 }
 
