@@ -90,23 +90,38 @@ function pushToLocalStorage(newTodos) {
 }
 
 function renderOnLoad() {
-  todos.forEach((todo) => {
+  todos.forEach((todo, todoIds) => {
     let listItem = document.getElementById("listItems");
     let ul = document.querySelector("ul");
     let li = document.createElement("li");
     ul.appendChild(li);
     listItem.appendChild(li);
 
-    li.textContent = todo;
+    li.textContent = (todo, todoIds);
 
     let deleteBtn = document.createElement("button");
     deleteBtn.className = "btn btn-danger btn-sm float-right";
     deleteBtn.appendChild(document.createTextNode("X"));
     li.appendChild(deleteBtn);
     listItem.appendChild(li);
+
+    deleteBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("li to be removed", li);
+      li.remove();
+      //7a. delete from DOM. An item can delete itself.
+      //8a. delete from local storage
+      let idToRemoveTodosIds = todoIds.id;
+      console.log("todoIds id:", idToRemoveTodosIds);
+      //it allows you to go through every single item in an array and if the todo is true it will shoot back into new array
+      let newTodoIds = todoIds.filter(
+        (todoIds) => todoIds.id != idToRemoveTodosIds
+      );
+      console.log("new todoIds: ", newTodoIds);
+    });
+    // 9a. need to make sure to push the new todos to local storage
+    pushToLocalStorage(newTodoIds);
   });
 }
 
 renderOnLoad();
-
-//create individual to do item, create a unique id for each to do item in list - this will help with the strikethrough functionality
