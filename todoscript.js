@@ -1,6 +1,5 @@
 //this is going to represent your local storage array - first get out of local storage using the key is 'todos'
 //const
-
 const todos = JSON.parse(localStorage.getItem("todos")) || [];
 let todoIds = JSON.parse(localStorage.getItem("todoIds")) || 0;
 //step 1. Set a global variable for the new todId
@@ -63,14 +62,6 @@ function renderTodo(todo) {
     pushToLocalStorage(newTodos);
   });
 }
-//remove this: below - you do not need it anymore - because of the new refactoring, we are adding an eventlistener above
-// document.querySelector("ul").addEventListener("click", deleteItem);
-
-// function deleteItem(e) {
-//   let remove = e.target.parentElement;
-//   let parentElement = remove.parentElement;
-//   parentElement.removeChild(remove);
-// }
 
 const ClearAll = document.getElementById("clear-all");
 ClearAll.addEventListener("click", clearAll);
@@ -87,11 +78,6 @@ function clearAll(e) {
 function pushToLocalStorage(newTodos) {
   console.log("new Todos", newTodos);
   localStorage.setItem("todos", JSON.stringify(newTodos));
-}
-
-function pushToLocalStorage(newTodoIds) {
-  console.log("new TodoIds", newTodoIds);
-  localStorage.setItem("new todoIds", JSON.stringify(newTodoIds));
 }
 
 function renderOnLoad() {
@@ -114,18 +100,12 @@ function renderOnLoad() {
       e.preventDefault();
       console.log("li to be removed", li);
       li.remove();
-      //7a. delete from DOM. An item can delete itself.
-      //8a. delete from local storage
-      let idToRemoveNewTodosIds = todoIds.id;
-      console.log("todoIds id:", idToRemoveNewTodosIds);
-      //it allows you to go through every single item in an array and if the todo is true it will shoot back into new array
-      //let newTodoIds = todoIds.filter(
-      //(todoIds) => todoIds.id != idToRemoveTodosIds
-      //);
-      //console.log("new todoIds: ", newTodoIds);
+
+      localStorage.setItem("todos", todos);
+      // 9a. need to make sure to push the new todos to local storage
+      pushToLocalStorage(todo.todoIds);
     });
     // 9a. need to make sure to push the new todos to local storage
-    pushToLocalStorage(newtodoIds);
   });
 }
 
