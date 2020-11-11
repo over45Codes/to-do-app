@@ -108,17 +108,11 @@ function renderOnLoad() {
       let idToRemoveTodosIds = todoIds.id;
       console.log("todoIds id:", idToRemoveTodosIds);
       //it allows you to go through every single item in an array and if the todo is true it will shoot back into new array
-      let newTodoIds = todo.filter(
-        (todoIds) => todoIds.id != idToRemoveTodosIds
-      );
-      console.log("new todoIds: ", newTodoIds);
     });
     // 9a. need to make sure to push the new todos to local storage
     //pushToLocalStorage(newTodoIds);
-    // 9a. need to make sure to push the new todos to local storage
-    pushToLocalStorage(todos);
-    //});
-    // 9a. need to make sure to push the new todos to local storage
+
+    pushToLocalStorage(newTodosIds);
   });
 }
 
