@@ -12,4 +12,4 @@ This application was a step-up from the previous one I built (digital-clock-app)
 
 ## Author
 
-- Grace Castaneda - Passionate Coder - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
+- Grace Castaneda - Full Stack Developer - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
