@@ -8,7 +8,7 @@ Try it [here!](https://gracii.github.io/To-Do-App/)
 
 ## Summary
 
-This application was a step-up from the previous one I built (digital-clock-app) and it was certainly more challenging due to the creation multi-list to-do list application by adding dynamic event listeners, Advanced JavaScript array methods, Dynamic re-rendering and Code organization best practices used, this was very involved. Also it was challening to factor in a function to store all of the data for this application using localStorage. Definitely a fun & challenging project!
+This application was a step-up from the previous ones I have built in Vanilla JS, and it was certainly more challenging due to the creation multi-list (to-do list) application by adding dynamic event listeners, using advanced JavaScript array methods, Dynamic re-rendering and Code organization best practices used, this was very involved. This application by far has been the most challening to factor in a function to store all of the data for this application using localStorage. Definitely a fun & in-depth project!
 
 ## Author
 
