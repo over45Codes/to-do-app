@@ -1,19 +1,26 @@
 html {
-  background-image: url("images/blue-mist.jpg");
+  background-color: #eaddca;
   background-size: cover;
   background-repeat: no-repeat;
+  font-size: 10px;
+  font-family: "Libre Baskerville", serif;
 }
 header {
-  font-family: "Ewert", cursive;
   font-size: x-large;
 }
+h1 {
+  border-style: ridge;
+  border-radius: 20px;
+  border-color: #9a2a2a;
+  margin-left: 80px;
+  padding: 20px;
+}
 body {
-  font-family: Tahoma;
   font-size: 20px;
-  color: black;
   width: 400px;
   margin: 0 auto;
 }
+
 form {
   display: flex;
   width: 100%;
@@ -24,25 +31,36 @@ input {
   width: 400px;
   font-size: 1.2em;
   background-color: black;
-  color: white;
+  color: #f0e68c;
+  border-radius: 55px;
 }
 
 .todo-container {
   width: 300px;
   margin: auto;
   display: block;
-  padding: 0.5rem 0.5rem;
+  padding: 60px;
   justify-content: space-between;
 }
 button {
   color: black;
   font-style: italic;
-  font-family: Tahoma, bold;
   font-size: medium;
   margin: 0 10px;
+  border-radius: 55px;
+  padding: 10px;
+  background-color: #967969;
 }
 
 button:hover {
-  color: orangered;
+  color: #c70039;
   cursor: pointer;
+}
+
+div {
+  padding-bottom: 10px;
+}
+
+li {
+  padding: 5px;
 }
