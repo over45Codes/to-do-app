@@ -10,10 +10,11 @@ header {
 }
 h1 {
   border-style: ridge;
-  border-radius: 20px;
+  border-radius: 80px;
   border-color: #9a2a2a;
-  margin-left: 80px;
-  padding: 20px;
+  margin-left: 60px;
+  padding: 30px;
+  border-width: 10px;
 }
 body {
   font-size: 20px;
@@ -36,10 +37,10 @@ input {
 }
 
 .todo-container {
-  width: 300px;
+  width: 500px;
   margin: auto;
   display: block;
-  padding: 60px;
+  padding: 70px;
   justify-content: space-between;
 }
 button {
@@ -50,15 +51,17 @@ button {
   border-radius: 55px;
   padding: 10px;
   background-color: #967969;
+  transition: all 0.3s;
 }
 
 .btn {
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 button:hover {
   color: #c70039;
   cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em;
 }
 
 div {
@@ -67,4 +70,5 @@ div {
 
 li {
   padding: 5px;
+  display: flexbox;
 }
