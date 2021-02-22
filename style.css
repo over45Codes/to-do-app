@@ -46,10 +46,14 @@ button {
   color: black;
   font-style: italic;
   font-size: medium;
-  margin: 0 10px;
+  margin: 0 40px;
   border-radius: 55px;
   padding: 10px;
   background-color: #967969;
+}
+
+.btn {
+  margin-left: 60px;
 }
 
 button:hover {
