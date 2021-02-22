@@ -4,7 +4,7 @@ To Do Application built in pure JavaScript, HTML, and CSS
 
 Try it [here!](https://gracii.github.io/To-Do-App/)
 
-![alt text](https://github.com/Gracii/To-Do-App/blob/master/graces-todosapp.png)
+![alt text](https://github.com/Gracii/To-Do-App/blob/master/images/graces-todosapp.png)
 
 ## Summary
 
