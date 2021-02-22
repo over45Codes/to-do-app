@@ -4,11 +4,11 @@ To Do Application built in pure JavaScript, HTML, and CSS
 
 Try it [here!](https://gracii.github.io/To-Do-App/)
 
-![alt text](https://github.com/Gracii/To-Do-App/blob/master/grace-todos.jpg)
+![alt text](https://github.com/Gracii/To-Do-App/blob/master/graces-todosapp.png)
 
 ## Summary
 
-This application was a step-up from the previous one I built (digital-clock-app) and it was certainly more challenging due to the creation ul and li elements dynamically using JavaScript, Local Storage and it was very involved. Definitely a fun & challenging project!
+This application was a step-up from the previous one I built (digital-clock-app) and it was certainly more challenging due to the creation ul and li elements dynamically using JavaScript, also adding fun styling to the buttons. Added Local Storage, this was very involved, definitely a fun & challenging project!
 
 ## Author
 
