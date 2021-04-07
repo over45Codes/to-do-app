@@ -1,12 +1,15 @@
 html {
+  display: flex;
+  justify-content: center;
   background-color: #eaddca;
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: 10px;
   font-family: "Libre Baskerville", serif;
 }
 header {
   font-size: x-large;
+  display: flex;
+  justify-content: center;
 }
 h1 {
   border-style: ridge;
@@ -17,9 +20,10 @@ h1 {
   border-width: 10px;
 }
 body {
-  font-size: 20px;
+  font-size: 25px;
   width: 400px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 form {
@@ -71,4 +75,11 @@ div {
 li {
   padding: 5px;
   display: flexbox;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  li {
+    font-size: 1em;
+  }
 }
