@@ -6,11 +6,13 @@ html {
   background-repeat: no-repeat;
   font-family: "Libre Baskerville", serif;
 }
+
 header {
   font-size: x-large;
   display: flex;
   justify-content: center;
 }
+
 h1 {
   border-style: ridge;
   border-radius: 80px;
@@ -37,7 +39,7 @@ input {
   font-size: 1.2em;
   background-color: black;
   color: #f0e68c;
-  border-radius: 55px;
+  border-radius: 90px;
 }
 
 .todo-container {
@@ -47,19 +49,20 @@ input {
   padding: 70px;
   justify-content: space-between;
 }
+
 button {
   color: black;
   font-style: italic;
-  font-size: medium;
+  font-size: 20px;
   margin: 0 40px;
-  border-radius: 55px;
+  border-radius: 45px;
   padding: 10px;
   background-color: #967969;
   transition: all 0.3s;
 }
 
 .btn {
-  margin-left: 50px;
+  margin-left: 0 auto;
 }
 
 button:hover {
@@ -75,11 +78,12 @@ div {
 li {
   padding: 5px;
   display: flexbox;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
-@media (max-width: 768px) {
-  li {
+@media (max-width: 1024px) {
+  .li {
     font-size: 1em;
+    flex-direction: row;
   }
 }
