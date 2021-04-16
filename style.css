@@ -1,9 +1,9 @@
 html {
   display: flex;
   justify-content: center;
-  background-color: #eaddca;
+  background: #ffe4e1;
   background-size: cover;
-  background-repeat: no-repeat;
+
   font-family: "Libre Baskerville", serif;
 }
 
@@ -11,12 +11,13 @@ header {
   font-size: x-large;
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 }
 
 h1 {
   border-style: ridge;
   border-radius: 80px;
-  border-color: #9a2a2a;
+  border-color: black;
   margin-left: 60px;
   padding: 30px;
   border-width: 10px;
@@ -38,8 +39,10 @@ input {
   width: 400px;
   font-size: 1.2em;
   background-color: black;
-  color: #f0e68c;
-  border-radius: 90px;
+  color: white;
+  border-radius: 150px;
+  padding: 10px;
+  border-style: inset;
 }
 
 .todo-container {
@@ -57,7 +60,7 @@ button {
   margin: 0 40px;
   border-radius: 45px;
   padding: 10px;
-  background-color: #967969;
+  background-color: white;
   transition: all 0.3s;
 }
 
@@ -66,7 +69,7 @@ button {
 }
 
 button:hover {
-  color: #c70039;
+  color: red;
   cursor: pointer;
   box-shadow: 0 0.5em 0.5em -0.4em;
 }
@@ -82,6 +85,12 @@ li {
 }
 
 @media (max-width: 1024px) {
+  .li {
+    font-size: 1em;
+    flex-direction: row;
+  }
+}
+@media (min-width: 320px) {
   .li {
     font-size: 1em;
     flex-direction: row;
