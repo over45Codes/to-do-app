@@ -2,9 +2,9 @@
 
 To Do Application built in pure JavaScript, HTML, and CSS
 
-Try it [here!](https://over45Codes.github.io/To-Do-App/)
+Try it [here!](https://over45Codes.github.io/to-do-app/){:target="_blank"}
 
-![alt text](https://github.com/graciicodes/To-Do-App/blob/master/images/Grace's%20Todo%20List%20pic.png)
+![alt text](https://github.com/graciicodes/to-do-app/blob/master/images/Grace's%20Todo%20List%20pic.png)
 
 ## Summary
 
