@@ -2,7 +2,7 @@
 
 To Do Application built in pure JavaScript, HTML, and CSS
 
-Try it [Click here to view my page](https://over45Codes.github.io/to-do-app/){:target="_blank"}[^1]
+Try it [Click here to view my page](https://over45Codes.github.io/to-do-app/)
 
 
 
