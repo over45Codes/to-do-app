@@ -10,8 +10,7 @@ Try it [Click here to view my page](https://over45Codes.github.io/to-do-app/)
 
 ## Summary
 
-This application was a step-up from the previous one I built (digital-clock-app) and it was certainly more challenging due to the creation ul and li elements dynamically using JavaScript, also adding fun styling to the buttons. Added Local Storage, this was very involved, definitely a fun & challenging project!
-
+This application represented a significant advancement compared to my earlier project, the "digital-clock-app." It presented greater complexity, primarily because it involved dynamic generation of <ul> and <li> elements through JavaScript, as well as the incorporation of creative button styling. The integration of Local Storage added another layer of complexity to the project, making it both enjoyable and a stimulating challenge.
 <!--testing commits-->
 
 ## Author
